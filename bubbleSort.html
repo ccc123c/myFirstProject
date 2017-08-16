@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    var arr=[13,45,23,6,8,12,34];
+    function bubbleSort(arr) {//冒泡排序，数组从大到小排序
+      for(var i=0;i<arr.length;i++){
+        var flag=true;
+        for(var j=0;j<arr.length;j++){
+          if(arr[j]<arr[j+1]){
+            flag=false;
+            arr[j]=[arr[j+1],arr[j+1]=arr[j]][0];
+          }
+        }
+        if(flag){
+          break;
+        }
+      }
+      return arr;
+    };
+    console.log(bubbleSort(arr));
+  </script>
+</head>
+<body>
+</body>
+</html>
